@@ -1,0 +1,193 @@
+/* Error Pages Styles */
+
+/* General Error Styles */
+.error-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.error-content {
+    text-align: center;
+    padding: 3rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.error-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.error-logo a {
+    color: #4a6bfd;
+    text-decoration: none;
+}
+
+.error-logo i {
+    margin-right: 5px;
+}
+
+.error-code {
+    margin-bottom: 1.5rem;
+}
+
+.error-code h1 {
+    font-size: 6rem;
+    font-weight: 800;
+    color: #4a6bfd;
+    margin: 0;
+    line-height: 1;
+    text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.error-message {
+    margin-bottom: 2rem;
+}
+
+.error-message h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #343a40;
+    margin-bottom: 1rem;
+}
+
+.error-message p {
+    font-size: 1.1rem;
+    color: #6c757d;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.error-image {
+    margin-bottom: 2rem;
+}
+
+.error-image img {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
+}
+
+.error-actions {
+    margin-top: 2rem;
+}
+
+/* 404 Page Specific */
+.error-404 .error-code h1 {
+    color: #4a6bfd;
+}
+
+.error-404 .error-message h2 {
+    color: #343a40;
+}
+
+/* 403 Page Specific */
+.error-403 .error-code h1 {
+    color: #ffc107;
+}
+
+.error-403 .error-message h2 {
+    color: #343a40;
+}
+
+/* 500 Page Specific */
+.error-500 .error-code h1 {
+    color: #dc3545;
+}
+
+.error-500 .error-message h2 {
+    color: #343a40;
+}
+
+/* Maintenance Page Specific */
+.error-maintenance .error-code h1 {
+    font-size: 2.5rem;
+    color: #17a2b8;
+}
+
+.error-maintenance .error-message h2 {
+    color: #343a40;
+}
+
+.error-maintenance .countdown {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.countdown-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #4a6bfd;
+    line-height: 1;
+}
+
+.countdown-label {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin-top: 0.5rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 767.98px) {
+    .error-content {
+        padding: 2rem;
+    }
+    
+    .error-code h1 {
+        font-size: 5rem;
+    }
+    
+    .error-message h2 {
+        font-size: 1.75rem;
+    }
+    
+    .error-message p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .error-content {
+        padding: 1.5rem;
+    }
+    
+    .error-code h1 {
+        font-size: 4rem;
+    }
+    
+    .error-message h2 {
+        font-size: 1.5rem;
+    }
+    
+    .error-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .error-actions .btn {
+        width: 100%;
+    }
+    
+    .error-maintenance .countdown {
+        gap: 1rem;
+    }
+    
+    .countdown-number {
+        font-size: 2rem;
+    }
+}
